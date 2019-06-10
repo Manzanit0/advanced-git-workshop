@@ -36,11 +36,11 @@ class Board
   end
 
   def row(index)
-    @board.each_slice(3).to_a[index]
+    @board.each_slice(@size).to_a[index]
   end
 
   def column(index)
-    @board.each_slice(3).to_a.transpose[index]
+    @board.each_slice(@size).to_a.transpose[index]
   end
 
   def diagonal
