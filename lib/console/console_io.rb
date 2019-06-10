@@ -22,10 +22,10 @@ class ConsoleIO
     @out.puts "#{GameOptions::HUMAN_VS_MACHINE}. Human vs Computer"
     @out.puts "#{GameOptions::MACHINE_VS_HUMAN}. Computer vs Human"
     @out.puts "#{GameOptions::MACHINE_VS_MACHINE}. Computer vs Computer\n"
-    @out.puts "\n-- Hard Mode  --"
-    @out.puts "#{GameOptions::HUMAN_VS_HARD_MACHINE}. Human vs Computer\n"
-    @out.puts "#{GameOptions::HARD_MACHINE_VS_HUMAN}. Computer vs Human\n"
-    @out.puts "#{GameOptions::HARD_MACHINE_VS_HARD_MACHINE}. Computer vs Computer\n"
+    @out.puts "\n-- Beast Mode  --"
+    @out.puts "#{GameOptions::HUMAN_VS_HARD_MACHINE}. Human vs (Impossible) Computer\n"
+    @out.puts "#{GameOptions::HARD_MACHINE_VS_HUMAN}. (Impossible) Computer vs Human\n"
+    @out.puts "#{GameOptions::HARD_MACHINE_VS_HARD_MACHINE}. Computer vs Computer (both impossible)\n"
   end
 
   def print_row(board, row)
