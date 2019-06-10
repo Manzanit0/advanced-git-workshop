@@ -44,7 +44,7 @@ RSpec.describe HardMachine do
     expect(move).to eql(7)
   end
 
-  it "draws a game against another HardMachine" do
+  it "draws a game against another HardMachine", too_long: true do
     player1 = HardMachine.new("X")
     player2 = HardMachine.new("O")
     game = Game.new(player1, player2)

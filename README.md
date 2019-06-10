@@ -14,3 +14,8 @@ Install the dependecies via [bundler](https://bundler.io/) and then simply run `
  ```
  
  The tests have been done with [RSpec](http://rspec.info/).
+
+ To exclude tests which run for too long, execute:
+ ```
+ rspec --tag ~too_long:true
+ ```
