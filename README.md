@@ -9,3 +9,7 @@ Follow the instructions in: https://github.com/Manzanit0/agw-bisect
 ## Git merge
 
 Follow the instructions in: https://github.com/Manzanit0/agw-merge
+
+## Git rebase
+
+Follow the instructions in: https://github.com/Manzanit0/agw-rebase
