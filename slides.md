@@ -19,7 +19,7 @@ paginate: true
 
 ## **What** is rebase?
 
-> *Reapply commits on top of another base tip 
+> _Reapply commits on top of another base tip_
 
 ---
 
@@ -41,7 +41,7 @@ paginate: true
     D---E---F---G master
 
 
-$ git rebase master
+$ git checkout topic
 $ git rebase master topic
 
 
@@ -69,3 +69,56 @@ $ git rebase master topic
 - Merge conflicts are more frequent
 
 - Commits can be lost in interactive mode
+
+---
+
+## Git **merge**
+
+###### *Eventually, all rivers lead to the sea*
+
+---
+
+### **What** is merge?
+
+> _Join two or more development histories together_
+
+---
+
+### What's the **difference** with rebase?
+
+- Merge commits are unique against other commits in the fact that they have two parent commits.
+
+- History is completely preserved, instead of rewritting it.
+
+---
+
+### **Why** would I want to merge?
+
+- Incorporate the commits from the named branch into the current branch without loosing history
+
+---
+
+### **Merging** in a nutshell
+
+```
+          A---B---C topic
+        /
+    D---E---F---G master
+
+$ git checkout master
+$ git merge topic
+
+          A---B---C topic
+        /         \
+    D---E---F---G---H master
+```
+
+---
+
+## Further **details**
+
+*Git merge will combine multiple sequences of commits into one unified history. [...] git merge takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.*
+
+- If a piece of data that is changed in both histories git will be unable to automatically combine them.
+
+- Fast-forward vs 3-way merge
