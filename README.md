@@ -1,4 +1,4 @@
-# Advanced Git Workshop
+# Git Strategies. A Workshop.
 
 ## Slides
 
