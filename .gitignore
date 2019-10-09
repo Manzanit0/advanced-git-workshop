@@ -1,0 +1,8 @@
+# OSX stuffs
+.DS_Store
+
+# compiled slides
+slides.pdf
+
+# editor specific stuffs
+.vscode
