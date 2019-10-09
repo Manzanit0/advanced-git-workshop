@@ -1,12 +1,12 @@
 ---
 marp: true
-title: Advanced Git Techniques
+title: Advanced Git
 theme: haskell
 class: lead
 paginate: true
 ---
 
-# Advanced **Git**
+# _Advanced_ **Git**
 ###### A history of conflicts among branches
 
 ---
@@ -122,3 +122,62 @@ $ git merge topic
 - If a piece of data that is changed in both histories git will be unable to automatically combine them.
 
 - Fast-forward vs 3-way merge
+
+---
+
+## Defining a **workflow**
+
+###### *Life only gives us options, choice is always ours.*
+
+---
+
+### **Trunk**-based development
+- Whole team develops to shared branch called trunk (!!) 
+- Short lived feature branches
+- Release branches
+
+#### When?
+- Just starting up/need quick iterations
+- Mostly senior developers
+
+#### When not?
+- Open source projects
+- Mostly junior developers
+
+---
+
+![trunk-based-development](https://www.gocd.org/assets/images/blog/cd-considerations/trunk-based-development-6995662e.png)
+
+---
+
+### **Gitflow** 
+- Two main branches: `develop` and `main`.
+- Features are developed by branching `develop` and are reviewed before merging.
+- Releases are merges from `develop` to `master`.
+
+#### When?
+The opposite scenarios to Trunk-based development. In other words, any scenario where **branch micromanagement** could be an asset rather than a burden.
+
+---
+
+![gitflow](https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=621)
+
+---
+
+### And where do merge/rebase fit in?
+
+Both of these commands are designed to integrate changes from one branch into another branch—they just do it in very different ways.
+
+The golden rule of `git rebase` is to never use it on public branches.
+
+Nonetheless, the team decides.
+
+---
+
+## Some other useful git **tools**
+
+- [git bisect](https://thoughtbot.com/blog/git-bisect)
+- [git log](https://www.atlassian.com/git/tutorials/git-log)
+- [git cherry-pick](https://www.atlassian.com/git/tutorials/cherry-pick)
+- [git reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)
+- [git hooks](https://githooks.com/)
