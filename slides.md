@@ -16,7 +16,8 @@ paginate: true
 - Git rebase
 - Git merge
 - Team git workflows
-- Extra tools for the toolbox
+- Common anti-patterns
+- Useful tools 
 
 ---
 
@@ -118,7 +119,7 @@ $ git checkout master
 $ git merge topic
 
           A---B---C topic
-        /         \
+        /          \
     D---E---F---G---H master
 ```
 
@@ -183,7 +184,27 @@ Nonetheless, the team decides.
 
 ---
 
-## On a different note, some useful **tools**
+## The **extra** mile
+
+###### *The noblest pleasure is the joy of understanding.*
+
+---
+
+### Some **anti-patterns** to be aware of
+
+- Pushing every commit
+- Can you jump to any commit?
+- Long living branches
+- Complicated commit log
+- Using GUIs
+
+**Commit early, commit often, perfect later, publish once.**
+
+_credits: [@lemiorhan](https://speakerdeck.com/lemiorhan/10-git-anti-patterns-you-should-be-aware-of)_
+
+---
+
+### Further **tools** to hone our craft
 
 - [git bisect](https://thoughtbot.com/blog/git-bisect)
 - [git log](https://www.atlassian.com/git/tutorials/git-log)
