@@ -1,29 +1,38 @@
 ---
 marp: true
-title: Advanced Git
+title: Git Strategies
 theme: haskell
 class: lead
 paginate: true
 ---
 
-# _Advanced_ **Git**
-###### A history of conflicts among branches
+# **Git** strategies
+###### A history of conflicts, and how to approach them
 
 ---
 
-# Git **rebase**
+## **Agenda**
+
+- Git rebase
+- Git merge
+- Team git workflows
+- Extra tools for the toolbox
+
+---
+
+## Git **rebase**
 
 ###### *Rewritting history since 2005*
 
 ---
 
-## **What** is rebase?
+### **What** is rebase?
 
 > _Reapply commits on top of another base tip_
 
 ---
 
-## So... **why** rebase?
+### So... **why** rebase?
 
 - Modifying broken commits, ergo eliminating bugged commits
 
@@ -33,7 +42,7 @@ paginate: true
 
 ---
 
-## **How** do I rebase?
+### **How** do I rebase?
 
 ```
            --A---B---C topic
@@ -115,7 +124,7 @@ $ git merge topic
 
 ---
 
-## Further **details**
+### Further **details**
 
 *Git merge will combine multiple sequences of commits into one unified history. [...] git merge takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.*
 
@@ -174,7 +183,7 @@ Nonetheless, the team decides.
 
 ---
 
-## Some other useful git **tools**
+## On a different note, some useful **tools**
 
 - [git bisect](https://thoughtbot.com/blog/git-bisect)
 - [git log](https://www.atlassian.com/git/tutorials/git-log)
