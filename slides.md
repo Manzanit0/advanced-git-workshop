@@ -211,3 +211,11 @@ _credits: [@lemiorhan](https://speakerdeck.com/lemiorhan/10-git-anti-patterns-yo
 - [git cherry-pick](https://www.atlassian.com/git/tutorials/cherry-pick)
 - [git reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)
 - [git hooks](https://githooks.com/)
+
+---
+
+### I hope you all **enjoyed!**
+
+Check out the latest version of the slides, as well as the workshop exercises
+
+https://github.com/Manzanit0/advanced-git-workshop
