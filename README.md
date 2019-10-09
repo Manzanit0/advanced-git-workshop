@@ -1,5 +1,14 @@
 # Git Strategies. A Workshop.
 
+## Outline
+
+- Git rebase
+- Git merge
+- Team workflows
+  - Trunk-based development
+  - Gitflow
+- Icing: Extra git tools which I find useful
+
 ## Slides
 
 The slides can be found in `slides.md`. To build them I have used
