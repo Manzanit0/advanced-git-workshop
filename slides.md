@@ -213,9 +213,20 @@ _credits: [@lemiorhan](https://speakerdeck.com/lemiorhan/10-git-anti-patterns-yo
 - [git hooks](https://githooks.com/)
 
 ---
+<!-- Scoped style -->
+<style scoped>
+p {
+  text-align: left;
+}
+a {
+  font-size: 18px;
+}
+</style>
+### **Thank you** all!
 
-### I hope you all **enjoyed!**
+![bg left](https://images6.alphacoders.com/985/985806.png)
 
-Check out the latest version of the slides, as well as the workshop exercises
+#### [Workshop Repository](https://github.com/Manzanit0/advanced-git-workshop)
 
-https://github.com/Manzanit0/advanced-git-workshop
+![](https://img.icons8.com/metro/26/000000/twitter.png) [hojasdemanzano](https://twitter.com/hojasdemanzano)
+![](https://img.icons8.com/small/32/000000/github.png) [Manzanit0](https://github.com/manzanit0)
